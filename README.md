@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a web application built with Remix, TypeScript, and SQLite. It includes features such as tag management, PDF generation, and more.
+This app listens the MQTT topic `nfc-player/spotify` for tag ids . When a tag is read, the app will search for the tag in the database and pubslish the Spotify URI to the MQTT topic `nfc-player/spotify`. If the tag cannot be found in the database a new record for the tag will be created. The UI then allows you to search for a song and add it to the tag. Moreover, you can select tags and generate a PDF for labels to print on the NFC cards.
 
 ## Installation
 
