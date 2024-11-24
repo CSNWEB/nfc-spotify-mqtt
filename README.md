@@ -1,40 +1,62 @@
-# Welcome to Remix!
+# NFC Spotify MQTT Manager
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Description
 
-## Development
+This project is a web application built with Remix, TypeScript, and SQLite. It includes features such as tag management, PDF generation, and more.
 
-Run the dev server:
+## Installation
 
-```shellscript
-npm run dev
-```
+1. Clone the repository:
 
-## Deployment
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-First, build your app for production:
+2. Install dependencies:
 
-```sh
-npm run build
-```
+   ```sh
+   npm install
+   ```
 
-Then run the app in production mode:
+3. Set up the environment variables:
+   ```sh
+   cp example.env .env
+   ```
 
-```sh
-npm start
-```
+## Scripts
 
-Now you'll need to pick a host to deploy it to.
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project.
+- `npm run start`: Start the production server.
 
-### DIY
+## Usage
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+1. Start the development server:
 
-Make sure to deploy the output of `npm run build`
+   ```sh
+   npm run dev
+   ```
 
-- `build/server`
-- `build/client`
+2. Open your browser and navigate to `http://localhost:3008`.
 
-## Styling
+## Project Details
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+### Database
+
+The database is managed using SQLite and the Drizzle ORM. The database configuration and migration setup can be found in db.js.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## Acknowledgements
+
+- [Remix](https://remix.run/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SQLite](https://www.sqlite.org/)
+- [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm)

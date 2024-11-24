@@ -3,3 +3,6 @@ node_modules
 /.cache
 /build
 .env
+tags.db/
+tags2.db/
+.env
